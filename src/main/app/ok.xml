@@ -13,7 +13,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 ">
     <http:listener-config name="http_conf" host="0.0.0.0" port="3001" />
-    
+
     <flow name="okFlow">
         <http:listener config-ref="http_conf" path="/" allowedMethods="GET" doc:name="HTTP"/>
         <set-payload value="ok" />
